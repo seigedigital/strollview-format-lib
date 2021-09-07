@@ -1,0 +1,262 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "https://seige.digital/strollview/2/context.jsonld"
+  ],
+  "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff",
+  "type": "AnnotationCollection",
+  "creator": "Leander",
+  "label": "DDD AAA",
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "first": {
+    "type": "AnnotationPage",
+    "items": [
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/0",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/0",
+          "type": "TextualBody",
+          "value": "<p>111-3</p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/canvas/c0#136,1251,310,279",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": {
+            "brightness": 100,
+            "contrast": 100,
+            "saturate": 0,
+            "hue_rotate": 0,
+            "sepia": 0,
+            "blur": 0
+          },
+          "passepartout": false,
+          "rotation": 0,
+          "audio": {
+            "ready": true,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/06.Ii.Presto.ogg",
+            "loop": false,
+            "offset": "1.4",
+            "play": "click",
+            "type": "application/ogg"
+          },
+          "manifest_id": "https://cdm16214.contentdm.oclc.org/iiif/info/medieval/101/manifest.json",
+          "canvas_id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/canvas/c0",
+          "image_id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/annotation/a0",
+          "image_srv": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/1",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/1",
+          "type": "TextualBody",
+          "value": "<p>2zwei</p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/canvas/10#296,947,992,828",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": false,
+          "passepartout": false,
+          "rotation": 35,
+          "audio": {
+            "ready": true,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/06.Ii.Presto.ogg",
+            "type": "application/ogg"
+          },
+          "manifest_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/manifest",
+          "canvas_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/canvas/10",
+          "image_id": "undefined",
+          "image_srv": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00039006_00010",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/2",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/2",
+          "type": "TextualBody",
+          "value": "<p>333<em><strong>d3</strong></em>sa</p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/canvas/c0#136,1251,310,279",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": {
+            "brightness": 100,
+            "contrast": 100,
+            "saturate": 101,
+            "hue_rotate": 0,
+            "sepia": 0,
+            "blur": 0
+          },
+          "passepartout": false,
+          "rotation": 0,
+          "audio": {
+            "ready": true,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/06.Ii.Presto.ogg",
+            "loop": true,
+            "offset": "5",
+            "play": "click",
+            "type": "application/ogg"
+          },
+          "manifest_id": "https://cdm16214.contentdm.oclc.org/iiif/info/medieval/101/manifest.json",
+          "canvas_id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/canvas/c0",
+          "image_id": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99/annotation/a0",
+          "image_srv": "https://cdm16214.contentdm.oclc.org/digital/iiif/medieval/99",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/3",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/3",
+          "type": "TextualBody",
+          "value": "",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://www.artic.edu/iiif/2/25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e#244,171,211,217",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": false,
+          "passepartout": {
+            "x": 0.5694872730061585,
+            "y": 0.3311547343512428,
+            "w": 0.265427942847821,
+            "h": 0.26542794284782084
+          },
+          "rotation": 0,
+          "audio": {
+            "ready": false,
+            "url": false,
+            "loop": false,
+            "offset": 0,
+            "play": "auto",
+            "type": "unknown"
+          },
+          "manifest_id": "https://api.artic.edu/api/v1/artworks/28560/manifest.json",
+          "canvas_id": "https://www.artic.edu/iiif/2/25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+          "image_srv": "https://www.artic.edu/iiif/2/25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+          "passepartout_color": "#26592bff",
+          "passepartout_invert": true
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/4",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/4",
+          "type": "TextualBody",
+          "value": "<p><br></p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/canvas/10#328,201,932,738",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": false,
+          "passepartout": false,
+          "rotation": 181,
+          "audio": false,
+          "manifest_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/manifest",
+          "canvas_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00039006/canvas/10",
+          "image_id": "undefined",
+          "image_srv": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00039006_00010",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/5",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/5",
+          "type": "TextualBody",
+          "value": "<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Sapien faucibus et molestie ac. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Netus et malesuada fames ac. Volutpat consequat mauris nunc congue nisi vitae suscipit. Id porta nibh venenatis cras sed felis eget velit aliquet. Cursus vitae congue mauris rhoncus aenean. Phasellus egestas tellus rutrum tellus. In arcu cursus euismod quis viverra nibh cras. Id donec ultrices tincidunt arcu. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Egestas diam in arcu cursus euismod quis. Sit amet nulla facilisi morbi tempus. Eleifend quam adipiscing vitae proin. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Augue ut lectus arcu bibendum.</p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://staedelmuseum.iiif.cloud/canvases/0102/1000/1#1039,180,1280,1280",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": false,
+          "passepartout": false,
+          "rotation": 0,
+          "audio": {
+            "ready": false,
+            "url": false,
+            "loop": false,
+            "offset": 0,
+            "play": "auto",
+            "type": "unknown"
+          },
+          "manifest_id": "https://staedelmuseum.iiif.cloud/manifests/0102/1000",
+          "canvas_id": "https://staedelmuseum.iiif.cloud/canvases/0102/1000/1",
+          "image_id": "https://staedelmuseum.iiif.cloud/images/0102/604e2682bd757dcab9664f109229786a63515813",
+          "image_srv": "https://staedelmuseum.iiif.cloud/imageservice/0102/60/604e2682bd757dcab9664f109229786a63515813.ptif",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      },
+      {
+        "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/annotation/6",
+        "type": "Annotation",
+        "body": {
+          "id": "https://strollid.manducus.net/leanderseige/12c7f5ee5c6245cf5a401743a59247ff/body/6",
+          "type": "TextualBody",
+          "value": "<p>Image 45 fünf und vierzig!&nbsp;</p>",
+          "format": "text/html"
+        },
+        "target": {
+          "id": "https://iiif.bodleian.ox.ac.uk/iiif/canvas/739c7983-fffb-4260-81fa-a36f5eb4db74.json",
+          "type": "Image",
+          "format": "image/jpeg"
+        },
+        "strollview": {
+          "filters": false,
+          "passepartout": false,
+          "rotation": 0,
+          "audio": {
+            "ready": false,
+            "url": false,
+            "loop": false,
+            "offset": 0,
+            "play": "auto",
+            "type": "unknown"
+          },
+          "manifest_id": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b73ca01f-aac8-4916-a7c6-3c8e67939a66.json",
+          "canvas_id": "https://iiif.bodleian.ox.ac.uk/iiif/canvas/739c7983-fffb-4260-81fa-a36f5eb4db74.json",
+          "image_id": "https://iiif.bodleian.ox.ac.uk/iiif/annotation/739c7983-fffb-4260-81fa-a36f5eb4db74.json",
+          "image_srv": "https://iiif.bodleian.ox.ac.uk/iiif/image/739c7983-fffb-4260-81fa-a36f5eb4db74",
+          "passepartout_color": "#000000cc",
+          "passepartout_invert": false
+        }
+      }
+    ]
+  }
+}
