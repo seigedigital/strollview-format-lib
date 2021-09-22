@@ -1,8 +1,7 @@
 class parserVersion2()
 
-
 function parseV2(stroll,gistid,uri) {
-    console.log("Parsev2")
+
     this.setState({
       loaders_sum: stroll.first.items.length,
       loaders_err: 0,
@@ -15,7 +14,7 @@ function parseV2(stroll,gistid,uri) {
     let errkey = 0
     let msg = []
     stroll.id = uri
-    console.log("a")
+
     store.dispatch({type: 'UPDATE_SETTINGS', data: { settings : { baseurl : uri, github_gist_id: gistid } } })
     for(let key in stroll.first.items) {
       let item = stroll.first.items[key]

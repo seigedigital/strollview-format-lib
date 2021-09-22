@@ -12,6 +12,7 @@ class svParser {
     uri = false
     stroll = false
 
+    // expects a parsed stroll
     constructor(stroll) {
         if(typeof stroll !== 'object') {
             this.addMessage("Not a valid Stroll.",true,true)
