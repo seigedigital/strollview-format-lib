@@ -1,5 +1,4 @@
-
-export default class svParser {
+class svParser {
 
     // expects a parsed stroll
     constructor(stroll) {
@@ -95,3 +94,5 @@ export default class svParser {
     //   return false
     // }
 }
+
+module.exports = svParser
