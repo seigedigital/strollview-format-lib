@@ -1,19 +1,20 @@
 
 export default class svParser {
 
-    status = {
-        pages: 0,
-        errors: 0,
-        status: 0,
-        failed: false,
-        version: 0,
-        messages: []
-    }
-    uri = false
-    stroll = false
-
     // expects a parsed stroll
     constructor(stroll) {
+
+        this.status = {
+            pages: 0,
+            errors: 0,
+            status: 0,
+            failed: false,
+            version: 0,
+            messages: []
+        }
+        this.uri = false
+        this.stroll = false
+
         if(typeof stroll !== 'object') {
             this.addMessage("Not a valid Stroll.",true,true)
             return
