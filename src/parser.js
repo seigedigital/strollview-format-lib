@@ -2,10 +2,10 @@
 class svParser {
 
     status = {
-        pages: 0, // number of pages
-        errors: 0, // number of errors
-        status: 0, // status 0=OK
-        failed: false, // failed or not
+        pages: 0,
+        errors: 0,
+        status: 0,
+        failed: false,
         version: 0,
         messages: []
     }
