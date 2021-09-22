@@ -1,5 +1,5 @@
 
-class svParser {
+export default class svParser {
 
     status = {
         pages: 0,
@@ -94,5 +94,3 @@ class svParser {
     //   return false
     // }
 }
-
-module.exports = svParser
