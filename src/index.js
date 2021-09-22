@@ -1,1 +1,1 @@
-export default from './parser.js'
+export { default as svParser } from './parser.js'
