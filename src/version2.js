@@ -4,6 +4,10 @@ class v2Parser {
         return stroll.first.items.length
     }
 
+    getTitle(stroll) {
+        return stroll.label
+    }
+
     getItem(stroll,n) {
         let retval={
             data: {},

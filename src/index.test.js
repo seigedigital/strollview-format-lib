@@ -59,6 +59,7 @@ describe('Part 2', () => {
  it('Fetched: should be 7 pages.', () => {
      expect(p).toBeDefined()
      expect(p.status.pages).toBe(7)
+     expect(p.data.label).toBe("DDD AAA")
  })
 
 })

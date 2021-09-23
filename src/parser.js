@@ -79,6 +79,7 @@ export default class svParser {
                 return
         }
         this.status.pages = this.parser.getNumberOfPages(this.stroll)
+        this.data.label = this.parser.getTitle(this.stroll)
     }
 
     next() {
