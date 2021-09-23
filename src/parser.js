@@ -2,7 +2,7 @@ import v1Parser from './version1.js'
 import v2Parser from './version2.js'
 import { Utils } from 'manifesto.js'
 
-class svParser {
+export default class svParser {
 
     // expects a parsed stroll
     constructor(uri) {
@@ -134,4 +134,4 @@ class svParser {
     }
 }
 
-module.exports = {default:svParser}
+// module.exports = svParser
