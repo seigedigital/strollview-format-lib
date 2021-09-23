@@ -19,7 +19,12 @@ export default class svParser {
         }
         this.uri = uri
         this.stroll = false
-        this.data = {}
+        this.data = {
+            items: {},
+            label:'',
+            creator:'',
+            rights:''
+        }
         this.parser = false
     }
 
@@ -80,6 +85,8 @@ export default class svParser {
         }
         this.status.pages = this.parser.getNumberOfPages(this.stroll)
         this.data.label = this.parser.getTitle(this.stroll)
+        this.data.creator = this.parser.getCreator(this.stroll)
+        this.data.rights = this.parser.getRights(this.stroll)
     }
 
     next() {
@@ -87,8 +94,8 @@ export default class svParser {
             let result = this.parser.getItem(this.stroll,this.status.cursor)
             this.status.errors += result.errors
             this.status.messages.concat(result.messages)
-            this.data[this.status.cursor]=result.data
-            this.data[this.status.cursor].n=this.status.cursor
+            this.data.items[this.status.cursor]=result.data
+            this.data.items[this.status.cursor].n=this.status.cursor
             this.status.cursor++
             return result.data
         }
@@ -96,8 +103,8 @@ export default class svParser {
     }
 
     getCanvas(n) {
-        let mid = this.data[n].manifest_id
-        let cid = this.data[n].canvas_id
+        let mid = this.data.items[n].manifest_id
+        let cid = this.data.items[n].canvas_id
         return new Promise((resolve, reject) => {
             fetch(mid)
                 .then(response => response.json())
@@ -106,7 +113,7 @@ export default class svParser {
                     if(!res) {
                         this.addMessage("Canvas not found: "+cid,true,false,false)
                     }
-                    this.data[n].canvas_bin = res
+                    this.data.items[n].canvas_bin = res
                     resolve(res)
                 })
                 .catch((error) => {

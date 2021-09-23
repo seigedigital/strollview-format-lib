@@ -60,6 +60,8 @@ describe('Part 2', () => {
      expect(p).toBeDefined()
      expect(p.status.pages).toBe(7)
      expect(p.data.label).toBe("DDD AAA")
+     expect(p.data.creator).toBe("Leander")
+     expect(p.data.rights).toBe("http://creativecommons.org/licenses/by/4.0/")
  })
 
 })

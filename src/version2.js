@@ -8,6 +8,14 @@ class v2Parser {
         return stroll.label
     }
 
+    getCreator(stroll) {
+        return stroll.creator
+    }
+
+    getRights(stroll) {
+        return stroll.rights
+    }
+
     getItem(stroll,n) {
         let retval={
             data: {},
