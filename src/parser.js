@@ -134,4 +134,4 @@ class svParser {
     }
 }
 
-module.exports = svParser
+module.exports = {default:svParser}
