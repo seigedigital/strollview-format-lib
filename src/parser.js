@@ -1,27 +1,30 @@
+import v1Parser from './version1.js'
+import v2Parser from './version2.js'
+import { Utils } from 'manifesto.js'
+
 class svParser {
 
     // expects a parsed stroll
-    constructor(stroll) {
+    constructor(uri) {
 
         this.status = {
+            cursor: 0,
             pages: 0,
             errors: 0,
             status: 0,
             failed: false,
+            done: false,
             version: 0,
             messages: []
         }
-        this.uri = false
+        this.uri = uri
         this.stroll = false
-
-        if(typeof stroll !== 'object') {
-            this.addMessage("Not a valid Stroll.",true,true)
-            return
-        }
-        this.stroll = stroll
+        this.data = {}
+        this.parser = false
     }
 
-    addMessage(message,error,failed) {
+    addMessage(message,error,failed,done) {
+        this.status.done = done
         this.status.failed = failed
         this.status.errors += error?1:0
         this.status.messages.push(message)
@@ -29,8 +32,11 @@ class svParser {
     }
 
     getVersion() {
+        if(!this.stroll) {
+            return
+        }
         if(! '@context' in this.stroll) {
-            addMessage("Unknown Format.",true,true)
+            return
         }
         let ctx = this.stroll['@context']
         if(!Array.isArray(this.stroll['@context'])) {
@@ -42,57 +48,90 @@ class svParser {
             this.status.version = 2
         } else {
             this.status.version = 0
-            addMessage("Unknown Format.",true,true)
         }
     }
 
-    // fetchStroll() {
-    //     fetch(this.uri)
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             this.stroll = data
-    //             this.getVersion()
-    //         })
-    //         .catch((error) => {
-    //             this.addMessage("Couldn't fetch URI.",true,true)
-    //         })
-    // }
+    fetchStroll() {
+        return fetch(this.uri)
+            .then(response => response.json())
+            .then(data => {
+                this.stroll = data
+                this.getVersion()
+                this.initParser()
+            })
+            .catch((error) => {
+                this.addMessage("Couldn't fetch URI.",true,true,true)
+            })
+    }
 
-    // fetchStroll() {
-    //     fetch(this.uri)
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             this.stroll = data
-    //             this.getVersion()
-    //         })
-    //         .catch((error) => {
-    //             this.addMessage("Couldn't fetch URI.",true,true)
-    //         })
-    // }
+    initParser() {
+        switch(this.status.version) {
+            case 1:
+                this.addMessage("Version 1 format detected.",false,false,false)
+                this.parser = new v1Parser()
+                break
+            case 2:
+                this.addMessage("Version 2 format detected.",false,false,false)
+                this.parser = new v2Parser()
+                break
+            default:
+                this.addMessage("Unknown format.",true,true,true)
+                return
+        }
+        this.status.pages = this.parser.getNumberOfPages(this.stroll)
+    }
 
-    // getCanvas(manifest_id, canvas_id) {
-    //   let response = await fetch(manifest_id)
-    //   let manifest = await response.json()
-    //
-    //   console.log({getin:manifest_id,getc:canvas_id})
-    //
-    //   // the new way
-    //   let canvases = loadManifest(manifest)
-    //   store.dispatch({type: 'ADD_CANVASES',data: {
-    //     iiifManifest: canvases
-    //   }})
-    //
-    //   // the old way
-    //   console.log(manifest)
-    //   // switch to manifesto!?
-    //   for(let skey in manifest['sequences'][0]['canvases']) {
-    //     if(manifest['sequences'][0]['canvases'][skey]['@id']===canvas_id) {
-    //       return clone(manifest['sequences'][0]['canvases'][skey])
-    //     }
-    //   }
-    //   console.log("CHECK PROBLEM "+canvas_id+" "+manifest_id)
-    //   return false
-    // }
+    next() {
+        if(this.status.cursor<this.status.pages) {
+            let result = this.parser.getItem(this.stroll,this.status.cursor)
+            this.status.errors += result.errors
+            this.status.messages.concat(result.messages)
+            this.data[this.status.cursor]=result.data
+            this.data[this.status.cursor].n=this.status.cursor
+            this.status.cursor++
+            return result.data
+        }
+        return false
+    }
+
+    getCanvas(n) {
+        let mid = this.data[n].manifest_id
+        let cid = this.data[n].canvas_id
+        return new Promise((resolve, reject) => {
+            fetch(mid)
+                .then(response => response.json())
+                .then(data => {
+                    let res = this.recursiveFindId(data,cid)
+                    if(!res) {
+                        this.addMessage("Canvas not found: "+cid,true,false,false)
+                    }
+                    this.data[n].canvas_bin = res
+                    resolve(res)
+                })
+                .catch((error) => {
+                    this.addMessage("Manifest not available: "+mid,true,false,false)
+                    reject()
+                })
+        })
+    }
+
+    recursiveFindId(o,id) {
+        for(let key in o) {
+            if(typeof o[key] === 'object') {
+                let r = this.recursiveFindId(o[key],id)
+                if(r) {
+                    return r
+                }
+            }
+            if(key==='@id' && o[key]===id) {
+                return o
+            }
+            if(key==='id' && o[key]===id) {
+                return o
+            }
+        }
+        return false
+    }
 }
 
 module.exports = svParser
