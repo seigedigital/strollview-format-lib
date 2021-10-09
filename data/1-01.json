@@ -1,0 +1,295 @@
+{
+  "@context": "https://seige.digital/ns/iiif.jsonld",
+  "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b",
+  "type": "AnnotationPageSequence",
+  "pages": [
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/0",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/0",
+            "type": "TextualBody",
+            "value": "<p>Deckblatt</p>",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://iiif.ub.uni-leipzig.de/0000032643/manifest.json",
+            "canvas_id": "https://iiif.ub.uni-leipzig.de/0000032643/canvas/00000001",
+            "image_id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a",
+            "image_srv": "https://iiif.ub.uni-leipzig.de/iiif/j2k/0000/0326/0000032643/00000001.jpx"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/1",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/1",
+            "type": "TextualBody",
+            "value": "<p>Deckblatt</p>",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://iiif.ub.uni-leipzig.de/0000032643/manifest.json",
+            "canvas_id": "https://iiif.ub.uni-leipzig.de/0000032643/canvas/00000001",
+            "image_id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a",
+            "image_srv": "https://iiif.ub.uni-leipzig.de/iiif/j2k/0000/0326/0000032643/00000001.jpx"
+          }
+        },
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/1/1",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/1/1",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a#605,1312,737,799",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://iiif.ub.uni-leipzig.de/0000032643/manifest.json",
+            "canvas_id": "https://iiif.ub.uni-leipzig.de/0000032643/canvas/00000001",
+            "image_id": "https://iiif.ub.uni-leipzig.de/0000032643/anno/038ce40e-75a1-4d55-8413-d57e056b747a",
+            "image_srv": "https://iiif.ub.uni-leipzig.de/iiif/j2k/0000/0326/0000032643/00000001.jpx"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/2",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/2",
+            "type": "TextualBody",
+            "value": "Evangelistar: Perikopenbuch Heinrichs II. - BSB Clm 4452",
+            "format": "text/html"
+          },
+          "target": {
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/manifest",
+            "canvas_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/canvas/7",
+            "image_srv": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00087481_00007"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/3",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/3",
+            "type": "TextualBody",
+            "value": "Evangelistar: Perikopenbuch Heinrichs II. - BSB Clm 4452",
+            "format": "text/html"
+          },
+          "target": {
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/manifest",
+            "canvas_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/canvas/7",
+            "image_srv": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00087481_00007"
+          }
+        },
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/3/1",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/3/1",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "undefined#854,1236,897,916",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/manifest",
+            "canvas_id": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00087481/canvas/7",
+            "image_srv": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00087481_00007"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/4",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/4",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/annotation/1388305",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/manifest",
+            "canvas_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/canvas/12699",
+            "image_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/annotation/1388305",
+            "image_srv": "https://sammlung.belvedere.at/apis/iiif/image/v2/12699"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/5",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/5",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+            "canvas_id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+            "image_id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "image_srv": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/6",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/6",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+            "canvas_id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+            "image_id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "image_srv": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+          }
+        },
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/6/1",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/6/1",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017#1748,231,299,300",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+            "canvas_id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+            "image_id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "image_srv": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/7",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/7",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+            "canvas_id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+            "image_id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "image_srv": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+          }
+        },
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/annotation/7/1",
+          "type": "Annotation",
+          "body": {
+            "id": "https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b/body/7/1",
+            "type": "TextualBody",
+            "value": "",
+            "format": "text/html"
+          },
+          "target": {
+            "id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017#2350,266,299,300",
+            "type": "Image",
+            "format": "image/jpeg",
+            "manifest_id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+            "canvas_id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+            "image_id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+            "image_srv": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Demo ",
+    "author": "Leander Seige",
+    "license": "http://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

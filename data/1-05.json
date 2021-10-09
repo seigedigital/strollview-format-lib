@@ -1,0 +1,136 @@
+{
+  "@context": "http://www.shared-canvas.org/ns/context.json",
+  "@id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+  "@type": "sc:Manifest",
+  "label": "NMAH-JN2016-01017",
+  "logo": "https://ids.si.edu/SI_Sunburst_40px.jpg",
+  "metadata": [
+    {
+      "label": "Title",
+      "value": "Plucked Dulcimer and Case used by Jean Ritchie"
+    },
+    {
+      "label": "METADATA USAGE",
+      "value": "CC0"
+    },
+    {
+      "label": "Guid",
+      "value": "http://n2t.net/ark:/65665/ng49ca746b3-e258-704b-e053-15f76fa0b4fa"
+    },
+    {
+      "label": "Data Source",
+      "value": "National Museum of American History"
+    },
+    {
+      "label": "user",
+      "value": "Ritchie, Jean"
+    },
+    {
+      "label": "maker",
+      "value": "Pickow, George"
+    },
+    {
+      "label": "Physical Description",
+      "value": "wood (dulcimer \u0026 case material)"
+    },
+    {
+      "label": "Physical Description",
+      "value": "metal (dulcimer \u0026 case material)"
+    },
+    {
+      "label": "Physical Description",
+      "value": "leatherette (case material)"
+    },
+    {
+      "label": "Physical Description",
+      "value": "fabric (case material)"
+    },
+    {
+      "label": "Measurements",
+      "value": "overall (dulcimer): 34 1/2 in x 7 3/4 in x 2 1/2 in; 87.63 cm x 19.685 cm x 6.35 cm"
+    },
+    {
+      "label": "Measurements",
+      "value": "overall (case): 13 in x 42 in x 4 in; 33.02 cm x 106.68 cm x 10.16 cm"
+    },
+    {
+      "label": "Description (Brief)",
+      "value": "\u003cp\u003eThis teardrop shaped plucked dulcimer was made by George Pickow in Viper, Kentucky in 1951. The body is made of walnut, poplar, and maple. The fingerboard is half-fretted and the top has two heart-shaped sound holes. The scroll is exceptionally hand-carved. Pickow made this dulcimer for Jean Ritchie as a wedding gift, and it was completed nine months after their marriage in September of 1950.\u003c/p\u003e"
+    },
+    {
+      "label": "Description (Brief)",
+      "value": "\u003cp\u003eThe custom-made dulcimer case is made of wood and covered with black leatherette. It has two brass latches, three brass hinges, and a plastic handle. The top of the lid has stitching around its front and sides. The interior is lined with purple plus and has a small compartment on the left side. The outside of the case is covered with stickers. This dulcimer and case were used by American folk music singer and songwriter, and Appalachian dulcimer player, Jean Ritchie (1922-2015).\u003c/p\u003e"
+    },
+    {
+      "label": "place made",
+      "value": "United States: Kentucky, Viper"
+    },
+    {
+      "label": "Credit Line",
+      "value": "Gift of Peter Pickow"
+    },
+    {
+      "label": "ID Number",
+      "value": "COLL.DULC.000001"
+    },
+    {
+      "label": "catalog number",
+      "value": "2015.0234.01"
+    },
+    {
+      "label": "catalog number",
+      "value": "2015.0234.01.01"
+    },
+    {
+      "label": "accession number",
+      "value": "2015.0234"
+    },
+    {
+      "label": "date made",
+      "value": "1951"
+    },
+    {
+      "label": "Object Name",
+      "value": "dulcimer"
+    }
+  ],
+  "license": "https://www.si.edu/termsofuse",
+  "attribution": "Smithsonian Institution",
+  "sequences": [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "https://ids.si.edu/ids/manifest/NMAH-JN2016-01017",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://ids.si.edu/ids/iiif/canvas-NMAH-JN2016-01017",
+          "@type": "sc:Canvas",
+          "label": "image NMAH-JN2016-01017",
+          "height": 960,
+          "width": 3000,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "height": 960,
+                "width": 3000,
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                }
+              },
+              "on": "https://ids.si.edu/ids/iiif/NMAH-JN2016-01017"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

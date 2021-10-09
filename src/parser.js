@@ -65,7 +65,7 @@ export default class svParser {
                 this.initParser()
             })
             .catch((error) => {
-                this.addMessage("Couldn't fetch URI.",true,true,true)
+                this.addMessage("Couldn't fetch URI: "+this.uri,true,true,true)
             })
     }
 

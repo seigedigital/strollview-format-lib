@@ -1,7 +1,19 @@
 class v1Parser {
 
     getNumberOfPages(stroll) {
-        return stroll.first.items.length
+        return 0
+    }
+
+    getTitle(stroll) {
+        return ""
+    }
+
+    getCreator(stroll) {
+        return ""
+    }
+
+    getRights(stroll) {
+        return ""
     }
 
 }

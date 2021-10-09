@@ -1,25 +1,23 @@
-class parserVersion2()
-
 function parseV2(stroll,gistid,uri) {
 
-    this.setState({
-      loaders_sum: stroll.first.items.length,
-      loaders_err: 0,
-      loaders_ok: 0,
-      loaders_msg: [],
-      openload: true,
-      openload_disabled: true
-    })
-    let error = false
-    let errkey = 0
-    let msg = []
-    stroll.id = uri
-
-    store.dispatch({type: 'UPDATE_SETTINGS', data: { settings : { baseurl : uri, github_gist_id: gistid } } })
-    for(let key in stroll.first.items) {
-      let item = stroll.first.items[key]
-      error = false
-      let data = {}
+    // this.setState({
+    //   loaders_sum: stroll.first.items.length,
+    //   loaders_err: 0,
+    //   loaders_ok: 0,
+    //   loaders_msg: [],
+    //   openload: true,
+    //   openload_disabled: true
+    // })
+    // let error = false
+    // let errkey = 0
+    // let msg = []
+    // stroll.id = uri
+    //
+    // store.dispatch({type: 'UPDATE_SETTINGS', data: { settings : { baseurl : uri, github_gist_id: gistid } } })
+    // for(let key in stroll.first.items) {
+    //   let item = stroll.first.items[key]
+    //   error = false
+    //   let data = {}
       data.manifest_id = item.strollview.manifest_id
       data.canvas_id = item.strollview.canvas_id
       data.image_id = item.strollview.image_id
