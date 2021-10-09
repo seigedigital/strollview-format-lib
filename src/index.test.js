@@ -89,8 +89,9 @@ describe('Part 3', () => {
    expect(p.status.cursor).toBe(2)
    expect(p.status.pages).toBe(7)
  })
+})
 
- describe('Part 4', () => {
+describe('Part 4', () => {
   let p
 
   beforeEach(() => {
@@ -113,6 +114,7 @@ describe('Part 3', () => {
     expect(p).toBeDefined()
     expect(p.status.errors).toBe(1)
   })
+
  })
 
 // Version 1 Tests
@@ -136,14 +138,57 @@ describe('Part 3', () => {
       expect(p.status.version).toBe(1)
   })
 
-  // it('Fetched: should be 7 pages.', () => {
-  //     expect(p).toBeDefined()
-  //     expect(p.status.pages).toBe(7)
-  //     expect(p.data.label).toBe("DDD AAA")
-  //     expect(p.data.creator).toBe("Leander")
-  //     expect(p.data.rights).toBe("http://creativecommons.org/licenses/by/4.0/")
-  // })
+  it('Fetched: should be 7 pages.', () => {
+      expect(p).toBeDefined()
+      expect(p.status.pages).toBe(8)
+      expect(p.data.label).toBe("Demo ")
+      expect(p.data.creator).toBe("Leander Seige")
+      expect(p.data.rights).toBe("http://creativecommons.org/licenses/by-sa/4.0/")
+  })
 
  })
 
+ describe('Part 6', () => {
+  let p
+
+  beforeEach(() => {
+    p = new svParser("https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b")
+    p.fetchStroll().then(()=>{
+        p.next()
+        p.next()
+    })
+  })
+
+  it('Fetched: Should be no errors.', () => {
+    expect(p).toBeDefined()
+    expect(p.status.cursor).toBe(2)
+    expect(p.status.pages).toBe(8)
+  })
+})
+
+
+describe('Part 7', () => {
+   let p
+
+   beforeEach(() => {
+     p = new svParser("https://strollid.manducus.net/leanderseige/d3a26d2b8fd49019542c0a9dbf9f3c2b")
+     p.fetchStroll().then(()=>{
+         let d=true
+         while(d) {
+             d = p.next()
+             if(d) {
+                 p.getCanvas(d.n).then((res) => {
+                     // console.log(p.status)
+                     // console.log(p.data)
+                 })
+             }
+         }
+     })
+   })
+
+   it('Fetched: Should be 2 errors.', () => {
+     expect(p).toBeDefined()
+     expect(p.status.errors).toBe(1)
+     console.log(p.status)
+   })
 })

@@ -161,7 +161,7 @@
             "type": "Image",
             "format": "image/jpeg",
             "manifest_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/manifest",
-            "canvas_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/canvas/12699",
+            "canvas_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/canvas/12699INTENTIONALERROR1",
             "image_id": "https://sammlung.belvedere.at/apis/iiif/presentation/v2/1-objects-7952/annotation/1388305",
             "image_srv": "https://sammlung.belvedere.at/apis/iiif/image/v2/12699"
           }
