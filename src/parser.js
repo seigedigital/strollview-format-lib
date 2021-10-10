@@ -114,7 +114,8 @@ export default class svParser {
                         this.addMessage("Canvas not found: "+cid,true,false,false)
                     }
                     this.data.items[n].canvas_bin = res
-                    resolve(res)
+                    resolve(this.data.items[n])
+                    // resolve(res)
                 })
                 .catch((error) => {
                     this.addMessage("Manifest not available: "+mid,true,false,false)
