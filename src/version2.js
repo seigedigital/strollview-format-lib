@@ -28,6 +28,7 @@ class v2Parser {
             retval.data.canvas_id = item.strollview.canvas_id
             retval.data.image_id = item.strollview.image_id
             retval.data.image_srv = item.strollview.image_srv
+            retval.data.image_static = item.strollview.image_static
             if('id' in item.target) {
               let xywh = item.target.id.split('#')
               if(xywh.length>1) {
